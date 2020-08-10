@@ -1,7 +1,7 @@
 #include <ServoTimer2.h>
-/*
- * This program is for a two motor dirve robot with a ultrasoinc attached to a servo.
- * The code will allow the robot to navigate a space without ruing into obstcals.
+/* 
+ * This program is for a two motor drive robot with a ultrasoinc attached to a servo using an arduino microcontroller.
+ * The code will allow the robot to navigate a space without ruing into objects.
  * Author: jakeh1
  */
 
