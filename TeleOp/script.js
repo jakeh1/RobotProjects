@@ -13,9 +13,6 @@ var driveTrianSocket = new WebSocket("ws://localhost:8001")
 
 
 
-
-
-
 driveTrianSocket.onopen = function(e) {
   console.log("Connection established");
   driveTrianSocket.send("[]");
@@ -89,19 +86,19 @@ document.addEventListener("keyup", function(event){
 function output(){
   var val = "[";
   if(wIsDown){
-    val = val + "<w>";
+    val = val + "w";
   }
   if(aIsDown){
-    val = val + "<a>";
+    val = val + "a";
   }
   if(sIsDown){
-    val = val + "<s>";
+    val = val + "s";
   }
   if(dIsDown){
-    val = val + "<d>";
+    val = val + "d";
   }
   if(shiftIsDown){
-    val = val + "<sh>";
+    val = val + "f";
   }
   val = val + "]"
   if(!(lastEvent == val)){
