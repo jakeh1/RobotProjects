@@ -47,9 +47,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
-  
   
   myservo.write(1500); //sets the servo to the forward postion.
   pings[0] = getPing();
@@ -233,9 +230,7 @@ int getPing()
   delayMicroseconds(5);
   digitalWrite(pingPin, LOW);
 
-  // The same pin is used to read the signal from the PING))): a HIGH pulse
-  // whose duration is the time (in microseconds) from the sending of the ping
-  // to the reception of its echo off of an object.
+  
   pinMode(pingPin, INPUT);
   duration = pulseIn(pingPin, HIGH);
 
